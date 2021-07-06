@@ -8,12 +8,10 @@ fun main() {
     for (i in 0..25) {
         println("$i! = ${combinator.factorial(i)}")
     }
-
     println(combinator.getChoose(7, 2))
     println(combinator.getChoose(7, 3))
     println(combinator.getChoose(52, 5))
     println(combinator.getChoose(20, 10))
-
 }
 
 class Combinator {
