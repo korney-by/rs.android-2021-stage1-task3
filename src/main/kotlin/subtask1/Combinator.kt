@@ -5,10 +5,6 @@ import java.math.BigInteger
 fun main() {
     val combinator = Combinator()
 
-//    for (i in 0..25) {
-//        println("$i! = ${combinator.factorial(i)}")
-//    }
-
     println(combinator.getChoose(3, 3))
     println(combinator.getChoose(3, 2))
     println(combinator.getChoose(3, 1))
@@ -57,7 +53,7 @@ class Combinator {
         return result
     }
 
-    fun factorial(n: Int): BigInteger {
+    private fun factorial(n: Int): BigInteger {
         return if (n < arrFactorials.size) {
             arrFactorials[n].toBigInteger()
         } else {

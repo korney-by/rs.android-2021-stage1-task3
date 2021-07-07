@@ -16,7 +16,6 @@ class TelephoneFinder {
             return null
         }
         val arrNeighborsNumbers: MutableList<String> = ArrayList()
-
         for (i in number.indices) {
             arrNeighborsNumbers.addAll(getNeighborsForOneDigit(number, i))
         }
